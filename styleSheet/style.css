@@ -1,0 +1,2548 @@
+/*Common CSS------------------------*/
+*{
+    box-sizing: border-box;
+}
+
+
+/*Mobile & small tablets------------------------*/
+@media only screen and (max-width: 800px){
+    body{
+        background: rgb(255, 255, 255);
+        height: 100%;
+    }
+    
+    h1{
+        font: normal normal bold 1em Arial, Helvetica, sans-serif;
+        color: rgb(122, 7, 133);
+    }
+    
+    h2{
+        font: normal normal bold 21px Arial, Helvetica, sans-serif;
+        color: rgb(148, 0, 32);
+    }
+    
+    h3{
+        font: normal normal bold 14px Arial, Helvetica, sans-serif;
+        color: rgb(9, 58, 87);
+    }
+    
+    p{
+        font: normal normal bold 10px Arial, Helvetica, sans-serif;
+        color: rgb(151, 69, 107);
+    }
+}
+
+
+/*Tablets------------------------*/
+@media only screen and (min-width: 801px) and (max-width: 1024px){
+    body{
+        background: rgb(255, 255, 255);
+        height: 100%;
+    }
+    
+    h1{
+        font: normal normal bold 2em Arial, Helvetica, sans-serif;
+        color: rgb(122, 7, 133);
+    }
+    
+    h2{
+        font: normal normal bold 25px Arial, Helvetica, sans-serif;
+        color: rgb(148, 0, 32);
+    }
+    
+    h3{
+        font: normal normal bold 18px Arial, Helvetica, sans-serif;
+        color: rgb(9, 58, 87);
+    }
+    
+    p{
+        font: normal normal bold 14px Arial, Helvetica, sans-serif;
+        color: rgb(151, 69, 107);
+    }
+}
+
+
+/*Laptops & desktops------------------------*/
+@media only screen and (min-width: 1025px){
+    body{
+        background: rgb(255, 255, 255);
+        height: 100%;
+    }
+    
+    h1{
+        font: normal normal bold 3em Arial, Helvetica, sans-serif;
+        color: rgb(122, 7, 133);
+    }
+    
+    h2{
+        font: normal normal bold 29px Arial, Helvetica, sans-serif;
+        color: rgb(148, 0, 32);
+    }
+    
+    h3{
+        font: normal normal bold 22px Arial, Helvetica, sans-serif;
+        color: rgb(9, 58, 87);
+    }
+    
+    p{
+        font: normal normal bold 18px Arial, Helvetica, sans-serif;
+        color: rgb(151, 69, 107);
+    }
+}
+
+
+
+
+
+/*Header CSS------------------------*/
+header{grid-area: header;}
+
+header{
+    background: rgb(19, 44, 104);
+}
+
+
+/*Mobile & small tablets------------------------*/
+@media only screen and (max-width: 800px){
+    header img{
+        width: 60px;
+        height: 60px;
+    }
+    
+    header .loginout{
+        position: relative;
+        float: right;
+        margin-top: 0.3em;
+        margin-right: 0.3em;
+    }
+    
+    header .loginout #subscribeBut{
+        width: 60px;
+        padding: 4px 4px;
+        border: 0;
+        border-radius: 1px;
+        background-color: rgb(255, 0, 0);
+        text-align: center;
+        color: white;
+        font: normal normal bold 10px Arial, Helvetica, sans-serif;
+    }
+    
+    header .loginout #subscribeBut:disabled{
+        background-color: rgb(204, 65, 65);
+    }
+
+    header .loginout #subscribeBut:hover{
+        
+    }
+    
+    header .loginout #subscribeBut:focus{
+ 
+    }
+    
+    header .loginout #disLoginBut{
+        width: 60px;
+        padding: 4px 4px;
+        border: 0;
+        border-radius: 1px;
+        background-color: rgb(34, 124, 241);
+        text-align: center;
+        color: white;
+        font: normal normal bold 10px Arial, Helvetica, sans-serif;
+    }
+    
+    header .loginout #disLoginBut:hover{
+        
+    }
+    
+    header .loginout #disLoginBut:focus{
+        
+    }
+    
+    header .loginout #loginForm{
+        display: none;
+        width: 50%;
+        height: 50%;
+        background-color: rgb(168, 201, 216);
+        position: fixed;
+        right: 25%;
+        bottom: 25%;
+        float: none;
+        z-index: 23;
+        overflow: auto;
+        border-radius: 4px;
+    }
+    
+    header .loginout #loginForm label{
+        position: relative;
+        top: 60px;
+        left: 25%;
+        color: rgb(0, 95, 139);
+        font: normal normal bold 10px Arial, Helvetica, sans-serif;
+    }
+    
+    header .loginout #loginForm input{
+        position: relative;
+        top: 60px;
+        left: 25%;
+        margin: 3px 0px 16px 0px;
+        padding: 3px 0px 3px 6px;
+        width: 50%;
+        height: 36px;
+        border: 0;
+        border-radius: 1px;
+        color: rgb(0, 95, 139);
+    }
+
+    header .loginout #loginForm #subLoginBut{
+        position: relative;
+        top: 60px;
+        left: 35%;
+        margin: 30px 0px 16px 0px;
+        padding: 3px 2px 3px 2px;
+        width: 30%;
+        height: 30px;
+        border: 0;
+        border-radius: 1px;
+        background-color: rgb(0, 95, 139);
+        color: white;
+        font: normal normal bold 10px Arial, Helvetica, sans-serif;
+        cursor: pointer;
+    }
+
+    header .loginout #loginForm #cloBut{
+        position: relative;
+        bottom: 170px;
+        left: 58%;
+        color: rgb(0, 95, 139);
+        background-color: rgba(168, 201, 216, 0);
+        border: 0;
+        font: normal normal 900 16px Arial, Helvetica, sans-serif;
+        cursor: pointer;
+    }
+
+
+    header .loginout #logoutBut{
+        position: relative;
+        display: none;
+        left: 64px;
+        width: 50px;
+        padding: 4px 4px;
+        border: 0;
+        border-radius: 1px;
+        background-color: rgb(69, 100, 109);
+        text-align: center;
+        color: white;
+        font: normal normal bold 10px Arial, Helvetica, sans-serif;
+    }
+
+    
+    header #searchForm{
+        position: relative;
+        float: right;
+        margin-top: 0.3em;
+        margin-right: 0.3em;
+    }
+    
+    header #searchForm img{
+        width: 12px;
+        height: 12px;
+        position: absolute;
+        margin: 5px 0 0 143px;
+        cursor: pointer;
+    }
+    
+    header #searchForm #search{
+        width: 160px;
+        padding: 4px 4px;
+        border: 1px solid rgb(102, 121, 150);
+        border-radius: 2px;
+        background-color: rgb(195, 216, 235);
+    }
+    
+    header #searchForm #search:hover{
+        border: 0px;
+        background-color: rgb(137, 166, 219);
+    }
+    
+    header #searchForm #search:focus{
+        border: 0px;
+        background-color: rgb(137, 166, 219);
+    }
+}
+
+
+/*Tablets------------------------*/
+@media only screen and (min-width: 801px) and (max-width: 1024px){
+    header img{
+        width: 90px;
+        height: 90px;
+    }
+    
+    header .loginout{
+        position: relative;
+        float: right;
+        margin-top: 0.5em;
+        margin-right: 0.5em;
+    }
+    
+    header .loginout #subscribeBut{
+        width: 68px;
+        padding: 4px 4px;
+        border: 0;
+        border-radius: 2px;
+        background-color: rgb(255, 0, 0);
+        text-align: center;
+        color: white;
+        font: normal normal bold 12px Arial, Helvetica, sans-serif;
+    }
+
+    header .loginout #subscribeBut:disabled{
+        background-color: rgb(204, 65, 65);
+    }
+    
+    header .loginout #subscribeBut:hover{
+        
+    }
+    
+    header .loginout #subscribeBut:focus{
+
+    }
+    
+    header .loginout #disLoginBut{
+        width: 68px;
+        padding: 4px 4px;
+        border: 0;
+        border-radius: 2px;
+        background-color: rgb(34, 124, 241);
+        text-align: center;
+        color: white;
+        font: normal normal bold 12px Arial, Helvetica, sans-serif;
+    }
+    
+    header .loginout #disLoginBut:hover{
+        
+    }
+    
+    header .loginout #disLoginBut:focus{
+        
+    }
+    
+    header .loginout #loginForm{
+        display: none;
+        width: 50%;
+        height: 50%;
+        background-color: rgb(168, 201, 216);
+        position: fixed;
+        right: 25%;
+        bottom: 25%;
+        float: none;
+        z-index: 23;
+        overflow: auto;
+        border-radius: 6px;
+    }
+    
+    header .loginout #loginForm label{
+        position: relative;
+        top: 60px;
+        left: 25%;
+        color: rgb(0, 95, 139);
+        font: normal normal bold 12px Arial, Helvetica, sans-serif;
+    }
+    
+    header .loginout #loginForm input{
+        position: relative;
+        top: 60px;
+        left: 25%;
+        margin: 3px 0px 16px 0px;
+        padding: 6px 0px 6px 6px;
+        width: 50%;
+        height: 36px;
+        border: 0;
+        border-radius: 2px;
+        color: rgb(0, 95, 139);
+    }
+
+    header .loginout #loginForm #subLoginBut{
+        position: relative;
+        top: 60px;
+        left: 35%;
+        margin: 30px 0px 16px 0px;
+        padding: 3px 6px 3px 6px;
+        width: 30%;
+        height: 30px;
+        border: 0;
+        border-radius: 2px;
+        background-color: rgb(0, 95, 139);
+        color: white;
+        font: normal normal bold 12px Arial, Helvetica, sans-serif;
+        cursor: pointer;
+    }
+
+    header .loginout #loginForm #cloBut{
+        position: relative;
+        bottom: 170px;
+        left: 60%;
+        color: rgb(0, 95, 139);
+        background-color: rgba(168, 201, 216, 0);
+        border: 0;
+        font: normal normal 900 18px Arial, Helvetica, sans-serif;
+        cursor: pointer;
+    }
+    
+    
+    header .loginout #logoutBut{
+        position: relative;
+        display: none;
+        left: 72px;
+        width: 58px;
+        padding: 4px 4px;
+        border: 0;
+        border-radius: 2px;
+        background-color: rgb(69, 100, 109);
+        text-align: center;
+        color: white;
+        font: normal normal bold 12px Arial, Helvetica, sans-serif;
+    }
+
+    header #searchForm{
+        position: relative;
+        float: right;
+        margin-top: 8px;
+        margin-right: 8px;
+    }
+    
+    header #searchForm img{
+        width: 15px;
+        height: 15px;
+        position: absolute;
+        margin: 7px 0 0 204px;
+        cursor: pointer;
+    }
+    
+    header #searchForm #search{
+        width: 225px;
+        padding: 6px 6px;
+        border: 2px solid rgb(102, 121, 150);
+        border-radius: 4px;
+        background-color: rgb(195, 216, 235);
+    }
+    
+    header #searchForm #search:hover{
+        border: 0px;
+        background-color: rgb(137, 166, 219);
+    }
+    
+    header #searchForm #search:focus{
+        border: 0px;
+        background-color: rgb(137, 166, 219);
+    }
+}
+
+
+/*Laptops & desktops------------------------*/
+@media only screen and (min-width: 1025px){
+    header img{
+        width: 120px;
+        height: 120px;
+    }
+    
+    header .loginout{
+        position: relative;
+        float: right;
+        margin-top: 0.7em;
+        margin-right: 0.7em;
+    }
+    
+    header .loginout #subscribeBut{
+        width: 76px;
+        padding: 4px 4px;
+        border: 0;
+        border-radius: 3px;
+        background-color: rgb(255, 0, 0);
+        text-align: center;
+        color: white;
+        font: normal normal bold 14px Arial, Helvetica, sans-serif;
+    }
+    
+    header .loginout #subscribeBut:disabled{
+        background-color: rgb(204, 65, 65);
+    }
+
+    header .loginout #subscribeBut:hover{
+        
+    }
+    
+    header .loginout #subscribeBut:focus{
+
+    }
+    
+    header .loginout #disLoginBut{
+        width: 76px;
+        padding: 4px 4px;
+        border: 0;
+        border-radius: 3px;
+        background-color: rgb(34, 124, 241);
+        text-align: center;
+        color: white;
+        font: normal normal bold 14px Arial, Helvetica, sans-serif;
+    }
+    
+    header .loginout #disLoginBut:hover{
+        
+    }
+    
+    header .loginout #disLoginBut:focus{
+        
+    }
+    
+    header .loginout #loginForm{
+        display: none;
+        width: 50%;
+        height: 50%;
+        background-color: rgb(168, 201, 216);
+        position: fixed;
+        right: 25%;
+        bottom: 25%;
+        float: none;
+        z-index: 23;
+        overflow: auto;
+        border-radius: 8px;
+    }
+    
+    header .loginout #loginForm label{
+        position: relative;
+        top: 60px;
+        left: 25%;
+        color: rgb(0, 95, 139);
+        font: normal normal bold 14px Arial, Helvetica, sans-serif;
+    }
+    
+    header .loginout #loginForm input{
+        position: relative;
+        top: 60px;
+        left: 25%;
+        margin: 3px 0px 16px 0px;
+        padding: 8px 0px 8px 6px;
+        width: 50%;
+        height: 36px;
+        border: 0;
+        border-radius: 3px;
+        color: rgb(0, 95, 139);
+    }
+
+    header .loginout #loginForm #subLoginBut{
+        position: relative;
+        top: 60px;
+        left: 35%;
+        margin: 30px 0px 16px 0px;
+        padding: 3px 6px 3px 6px;
+        width: 30%;
+        height: 30px;
+        border: 0;
+        border-radius: 3px;
+        background-color: rgb(0, 95, 139);
+        color: white;
+        font: normal normal bold 14px Arial, Helvetica, sans-serif;
+        cursor: pointer;
+    }
+
+    header .loginout #loginForm #cloBut{
+        position: relative;
+        bottom: 170px;
+        left: 62%;
+        color: rgb(0, 95, 139);
+        background-color: rgba(168, 201, 216, 0);
+        border: 0;
+        font: normal normal 900 20px Arial, Helvetica, sans-serif;
+        cursor: pointer;
+    }
+
+
+    header .loginout #logoutBut{
+        position: relative;
+        display: none;
+        left: 80px;
+        width: 76px;
+        padding: 4px 4px;
+        border: 0;
+        border-radius: 3px;
+        background-color: rgb(69, 100, 109);
+        text-align: center;
+        color: white;
+        font: normal normal bold 14px Arial, Helvetica, sans-serif;
+    }
+    
+    
+    header #searchForm{
+        position: relative;
+        float: right;
+        margin-top: 0.7em;
+        margin-right: 0.7em;
+    }
+    
+    header #searchForm img{
+        width: 18px;
+        height: 18px;
+        position: absolute;
+        margin: 9px 0 0 270px;
+        cursor: pointer;
+    }
+    
+    header #searchForm #search{
+        width: 300px;
+        padding: 8px 8px;
+        border: 3px solid rgb(102, 121, 150);
+        border-radius: 6px;
+        background-color: rgb(195, 216, 235);
+    }
+    
+    header #searchForm #search:hover{
+        border: 0px;
+        background-color: rgb(137, 166, 219);
+    }
+    
+    header #searchForm #search:focus{
+        border: 0px;
+        background-color: rgb(137, 166, 219);
+    }
+}
+
+
+
+
+
+/*Nav CSS------------------------*/
+nav{grid-area: nav;}
+
+
+/*Mobile & small tablets------------------------*/
+@media only screen and (max-width: 800px){
+    nav{
+        background:rgb(41, 63, 114);
+        text-align: center;
+    }
+    
+    nav .norNav{
+        font: normal normal bold 14px Arial, Helvetica, sans-serif;
+        color: rgb(255, 255, 255);
+        margin-top: 2px;
+    }
+
+
+    nav .norNav #menuSym{
+        color: white;
+        cursor: pointer;
+        margin-top: 2px;
+    }
+
+
+    nav .resNav #menuSym{
+        color: white;
+        cursor: pointer;
+        margin-top: 2px;
+    }
+
+    
+    nav .norNav li{
+        font: normal normal bold 14px Arial, Helvetica, sans-serif;
+        color: rgb(255, 255, 255);
+        display: none;
+        margin-top: 2px;
+    }
+
+    nav .resNav li{
+        font: normal normal bold 14px Arial, Helvetica, sans-serif;
+        color: rgb(255, 255, 255);
+        display: block;
+        margin-top: 2px;
+    }
+
+    
+    nav .resNav li a{
+        font: normal normal bold 14px Arial, Helvetica, sans-serif;
+        color: rgb(255, 255, 255);
+        display: block;
+        text-decoration: none;
+        margin-top: 2px;
+    }
+    
+    nav .resNav li a:hover{
+        color: rgb(120, 145, 199);
+    }
+}
+
+
+/*Tablets------------------------*/
+@media only screen and (min-width: 801px) and (max-width: 1024px){
+    nav{
+        background:rgb(41, 63, 114);
+        text-align: center;
+    }
+    
+    nav #colMenu{
+        font: normal normal bold 16px Arial, Helvetica, sans-serif;
+        color: rgb(255, 255, 255);
+        margin: 2px 6px;
+    }
+
+    nav #colMenu #menuSym{
+        display: none;
+        cursor: pointer;
+        color: white;
+    }
+
+   
+    
+    nav #colMenu li{
+        font: normal normal bold 16px Arial, Helvetica, sans-serif;
+        color: rgb(255, 255, 255);
+        display: inline;
+        margin: 2px 6px;
+    }
+    
+    nav #colMenu li a{
+        font: normal normal bold 16px Arial, Helvetica, sans-serif;
+        color: rgb(255, 255, 255);
+        display: inline-block;
+        text-decoration: none;
+        margin: 2px 6px;
+    }
+    
+    nav #colMenu li a:hover{
+        color: rgb(120, 145, 199);
+    }
+}
+
+
+/*Laptops & desktops------------------------*/
+@media only screen and (min-width: 1025px){
+    nav{
+        background:rgb(41, 63, 114);
+        text-align: center;
+    }
+
+    nav #colMenu{
+        font: normal normal bold 18px Arial, Helvetica, sans-serif;
+        color: rgb(255, 255, 255);
+        margin: 3px 8px;
+    }
+
+    nav #colMenu #menuSym{
+        display: none;
+        cursor: pointer;
+        color: white;
+    }
+
+    
+    
+    nav #colMenu li{
+        font: normal normal bold 18px Arial, Helvetica, sans-serif;
+        color: rgb(255, 255, 255);
+        display: inline;
+        margin: 3px 8px;
+    }
+    
+    nav #colMenu li a{
+        font: normal normal bold 18px Arial, Helvetica, sans-serif;
+        color: rgb(255, 255, 255);
+        display: inline-block;
+        text-decoration: none;
+        margin: 3px 8px;
+    }
+    
+    nav #colMenu li a:hover{
+        color: rgb(120, 145, 199);
+    }
+}
+
+
+
+
+
+/*index.html------------------------*/
+.trendingVideos{grid-area: trending;}
+.articles{grid-area: article;}
+.popNews{grid-area: pop;}
+
+
+/*Mobile & small tablets------------------------*/
+@media only screen and (max-width: 800px){
+    .grid-container-main{
+        display: grid;
+        grid-template-columns: auto auto auto auto auto auto;
+        grid-template-areas: 
+            'header header header header header header'
+            'nav nav nav nav nav nav'
+            'article article article article article article'
+            'trending trending trending trending trending trending'
+            'pop pop pop pop pop pop'
+            'footer footer footer footer footer footer';
+        background-color: white;
+    }
+    
+    .trendingVideos{
+        background-color: rgba(102, 120, 161, 0.3);
+        text-align: center;
+        color: rgb(0, 0, 0);
+        font: normal normal bold 16px Arial, Helvetica, sans-serif;
+    }
+    
+    .trendingVideos h2{
+        font: normal normal bold 16px Arial, Helvetica, sans-serif;
+    }
+    
+    
+    .trendingVideos #f1stTrending{
+        position: relative;
+    }
+    
+    .trendingVideos #f1stTrending #f1video{
+        position: relative;
+        width: 300px;
+        height: 180px;
+    }
+    
+    .trendingVideos #f1stTrending #f1video source{
+        
+    }
+
+    
+    .trendingVideos #f1stTrending #f1stOvl{
+        position: absolute;
+    }
+    
+    .trendingVideos #f1stTrending #f1stOvl p{
+        font: normal normal bold 12px Arial, Helvetica, sans-serif;
+    }
+    
+    .trendingVideos hr{
+        border: auto solid rgb(128, 128, 128) ;
+    }
+    
+    .trendingVideos #s2ndTrending{
+        position: relative;
+    }
+    
+    .trendingVideos #s2ndTrending #s2video{
+        position: relative;
+        width: 300px;
+        height: 180px;
+    }
+    
+    .trendingVideos #s2ndTrending #s2video source{
+        
+    }
+    
+    .trendingVideos #s2ndTrending #s2ndOvl{
+        position: absolute;
+    }
+    
+    .trendingVideos #s2ndTrending #s2ndOvl p{
+        font: normal normal bold 12px Arial, Helvetica, sans-serif;
+    }
+    
+    
+    .articles{
+        background-color: rgba(102, 120, 161, 0.1) ;
+        text-align: left;
+        color: rgb(0, 0, 0);
+        font: normal normal bold 16px Arial, Helvetica, sans-serif;
+    }
+    
+    .articles #mainArticle{
+        text-align: center;
+    }
+    
+    .articles #mainArticle video{
+        width: 300px;
+        height: 180px;
+        margin-top: 0.3em;
+    }
+
+    .articles #mainArticle video source{
+        
+    }
+    
+    .articles #mainArticle h3{
+        
+    }
+    
+    .articles #mainArticle h3 a{
+        font: normal normal bold 14px Arial, Helvetica, sans-serif;
+        color: rgb(0, 0, 0);
+        text-decoration: none;
+    }
+    
+    
+    .articles #f1stArticle{
+        margin-top: 1em;
+        margin-bottom: 1em;
+    }
+    
+    .articles #f1stArticle img{
+        width: 80px;
+        height: 80px;
+        margin-left: 18px;
+    }
+    
+    .articles #f1stArticle h3{
+        display: inline;
+    }
+    
+    .articles #f1stArticle h3 a{
+        font: normal normal bold 14px Arial, Helvetica, sans-serif;
+        color: rgb(0, 0, 0);
+        display: inline;
+        text-decoration: none;
+    }
+    
+    
+    .articles hr{
+        border: auto solid rgb(128, 128, 128) ;
+    }
+    
+    
+    .articles #s2ndArticle{
+        margin-top: 1em;
+        margin-bottom: 1em;
+    }
+    
+    .articles #s2ndArticle img{
+        width: 80px;
+        height: 80px;
+        margin-left: 18px;
+    }
+    
+    .articles #s2ndArticle h3{
+        display: inline;
+    }
+    
+    .articles #s2ndArticle h3 a{
+        font: normal normal bold 14px Arial, Helvetica, sans-serif;
+        color: rgb(0, 0, 0);
+        display: inline;
+        text-decoration: none;
+    }
+    
+    
+    .popNews{
+        background-color: rgba(102, 120, 161, 0.1);
+        text-align: left;
+        color: rgb(0, 0, 0);
+        font: normal normal bold 16px Arial, Helvetica, sans-serif;
+    }
+    
+    .popNews h2{
+        text-align: center;
+        font: normal normal bold 16px Arial, Helvetica, sans-serif;
+    }
+    
+    
+    .popNews #f1stPop{
+        margin-top: 1em;
+        margin-bottom: 1em;
+    }
+    
+    .popNews #f1stPop img{
+        width: 80px;
+        height: 80px;
+        margin-left: 18px;
+    }
+    
+    .popNews #f1stPop h3{
+        display: inline;
+    }
+    
+    .popNews #f1stPop h3 a{
+        font: normal normal bold 14px Arial, Helvetica, sans-serif;
+        color: rgb(0, 0, 0);
+        display: inline;
+        text-decoration: none;
+    }
+    
+    .popNews hr{
+        border: auto solid rgb(128, 128, 128) ;
+    }
+    
+    .popNews #s2ndPop{
+        margin-top: 1em;
+        margin-bottom: 1em;
+    }
+    
+    .popNews #s2ndPop img{
+        width: 80px;
+        height: 80px;
+        margin-left: 18px;
+    }
+    
+    .popNews #s2ndPop h3{
+        display: inline;
+    }
+    
+    .popNews #s2ndPop h3 a{
+        font: normal normal bold 14px Arial, Helvetica, sans-serif;
+        color: rgb(0, 0, 0);
+        display: inline;
+        text-decoration: none;
+    }
+}
+
+
+/*Tablets------------------------*/
+@media only screen and (min-width: 801px) and (max-width: 1024px){
+    .grid-container-main{
+        display: grid;
+        grid-template-columns: 180px auto auto auto auto 180px;
+        grid-template-areas: 
+            'header header header header header header'
+            'nav nav nav nav nav nav'
+            'trending article article article article pop'
+            'footer footer footer footer footer footer';
+        background-color: white;
+    }
+    
+    .trendingVideos{
+        background-color: rgba(102, 120, 161, 0.3) ;
+        text-align: center;
+        color: rgb(0, 0, 0);
+        font: normal normal bold 18px Arial, Helvetica, sans-serif;
+    }
+    
+    .trendingVideos h2{
+        font: normal normal bold 18px Arial, Helvetica, sans-serif;
+    }
+    
+    
+    .trendingVideos #f1stTrending{
+        position: relative;
+    }
+    
+    .trendingVideos #f1stTrending #f1video{
+        position: relative;
+        width: 120px;
+        height: 70px;
+    }
+    
+    .trendingVideos #f1stTrending #f1video source{
+        
+    }
+    
+    
+    .trendingVideos #f1stTrending #f1stOvl{
+        position: absolute;
+    }
+    
+    .trendingVideos #f1stTrending #f1stOvl p{
+        font: normal normal bold 10px Arial, Helvetica, sans-serif;
+    }
+    
+    .trendingVideos hr{
+        border: auto solid rgb(128, 128, 128) ;
+    }
+    
+    .trendingVideos #s2ndTrending{
+        position: relative;
+    }
+    
+    .trendingVideos #s2ndTrending #s2video{
+        position: relative;
+        width: 120px;
+        height: 70px;
+    }
+    
+    .trendingVideos #s2ndTrending #s2video source{
+        
+    }
+    
+    .trendingVideos #s2ndTrending #s2ndOvl{
+        position: absolute;
+    }
+    
+    .trendingVideos #s2ndTrending #s2ndOvl p{
+        font: normal normal bold 10px Arial, Helvetica, sans-serif;
+    }
+    
+    
+    .articles{
+        background-color: rgba(102, 120, 161, 0.1) ;
+        text-align: left;
+        color: rgb(0, 0, 0);
+        font: normal normal bold 18px Arial, Helvetica, sans-serif;
+    }
+    
+    .articles #mainArticle{
+        text-align: center;
+    }
+    
+
+    .articles #mainArticle video{
+        width: 400px;
+        height: 200px;
+        margin-top: 0.3em;
+    }
+
+    .articles #mainArticle video source{
+        
+    }
+    
+    .articles #mainArticle h3{
+        
+    }
+    
+    .articles #mainArticle h3 a{
+        font: normal normal bold 14px Arial, Helvetica, sans-serif;
+        color: rgb(0, 0, 0);
+        text-decoration: none;
+    }
+    
+    
+    .articles #f1stArticle{
+        margin-top: 1em;
+        margin-bottom: 1em;
+    }
+    
+    .articles #f1stArticle img{
+        width: 40px;
+        height: 40px;
+        margin-left: 12px;
+    }
+    
+    .articles #f1stArticle h3{
+        display: inline;
+    }
+    
+    .articles #f1stArticle h3 a{
+        font: normal normal bold 14px Arial, Helvetica, sans-serif;
+        color: rgb(0, 0, 0);
+        display: inline;
+        text-decoration: none;
+    }
+    
+    
+    .articles hr{
+        border: auto solid rgb(128, 128, 128) ;
+    }
+    
+    
+    .articles #s2ndArticle{
+        margin-top: 1em;
+        margin-bottom: 1em;
+    }
+    
+    .articles #s2ndArticle img{
+        width: 40px;
+        height: 40px;
+        margin-left: 12px;
+    }
+    
+    .articles #s2ndArticle h3{
+        display: inline;
+    }
+    
+    .articles #s2ndArticle h3 a{
+        font: normal normal bold 14px Arial, Helvetica, sans-serif;
+        color: rgb(0, 0, 0);
+        display: inline;
+        text-decoration: none;
+    }
+    
+    
+    .popNews{
+        background-color: rgba(102, 120, 161, 0.3) ;
+        text-align: left;
+        color: rgb(0, 0, 0);
+        font: normal normal bold 18px Arial, Helvetica, sans-serif;
+    }
+    
+    .popNews h2{
+        text-align: center;
+        font: normal normal bold 18px Arial, Helvetica, sans-serif;
+    }
+    
+    
+    .popNews #f1stPop{
+        margin-top: 1em;
+        margin-bottom: 1em;
+    }
+    
+    .popNews #f1stPop img{
+        width: 20px;
+        height: 20px;
+        margin-left: 12px;
+    }
+    
+    .popNews #f1stPop h3{
+        display: inline;
+    }
+    
+    .popNews #f1stPop h3 a{
+        font: normal normal bold 14px Arial, Helvetica, sans-serif;
+        color: rgb(0, 0, 0);
+        display: inline;
+        text-decoration: none;
+    }
+    
+    .popNews hr{
+        border: auto solid rgb(128, 128, 128) ;
+    }
+    
+    .popNews #s2ndPop{
+        margin-top: 1em;
+        margin-bottom: 1em;
+    }
+    
+    .popNews #s2ndPop img{
+        width: 20px;
+        height: 20px;
+        margin-left: 12px;
+    }
+    
+    .popNews #s2ndPop h3{
+        display: inline;
+    }
+    
+    .popNews #s2ndPop h3 a{
+        font: normal normal bold 14px Arial, Helvetica, sans-serif;
+        color: rgb(0, 0, 0);
+        display: inline;
+        text-decoration: none;
+    }
+}
+
+
+/*Laptops & desktops------------------------*/
+@media only screen and (min-width: 1025px){
+    .grid-container-main{
+        display: grid;
+        grid-template-columns: 200px auto auto auto auto 200px;
+        grid-template-areas: 
+            'header header header header header header'
+            'nav nav nav nav nav nav'
+            'trending article article article article pop'
+            'footer footer footer footer footer footer';
+        background-color: white;
+    }
+    
+    .trendingVideos{
+        background-color: rgba(102, 120, 161, 0.3) ;
+        text-align: center;
+        color: rgb(0, 0, 0);
+        font: normal normal bold 20px Arial, Helvetica, sans-serif;
+    }
+    
+    .trendingVideos h2{
+        font: normal normal bold 20px Arial, Helvetica, sans-serif;
+    }
+    
+    
+    .trendingVideos #f1stTrending{
+        position: relative;
+    }
+    
+    .trendingVideos #f1stTrending #f1video{
+        position: relative;
+        width: 180px;
+        height: 130px;
+    }
+    
+    .trendingVideos #f1stTrending #f1video source{
+        
+    }
+    
+    
+    .trendingVideos #f1stTrending #f1stOvl{
+        position: absolute;
+    }
+    
+    .trendingVideos #f1stTrending #f1stOvl p{
+        font: normal normal bold 12px Arial, Helvetica, sans-serif;
+    }
+    
+    .trendingVideos hr{
+        border: auto solid rgb(128, 128, 128) ;
+    }
+    
+    .trendingVideos #s2ndTrending{
+        position: relative;
+    }
+    
+    .trendingVideos #s2ndTrending #s2video{
+        position: relative;
+        width: 180px;
+        height: 130px;
+    }
+    
+    .trendingVideos #s2ndTrending #s2video source{
+        
+    }
+    
+    .trendingVideos #s2ndTrending #s2ndOvl{
+        position: absolute;
+    }
+    
+    .trendingVideos #s2ndTrending #s2ndOvl p{
+        font: normal normal bold 12px Arial, Helvetica, sans-serif;
+    }
+    
+    
+    .articles{
+        background-color: rgba(102, 120, 161, 0.1) ;
+        text-align: left;
+        color: rgb(0, 0, 0);
+        font: normal normal bold 20px Arial, Helvetica, sans-serif;
+    }
+    
+    .articles #mainArticle{
+        text-align: center;
+    }
+    
+
+    .articles #mainArticle video{
+        width: 600px;
+        height: 400px;
+        margin-top: 0.3em;
+    }
+
+    .articles #mainArticle video source{
+        
+    }
+    
+    .articles #mainArticle h3{
+        
+    }
+    
+    .articles #mainArticle h3 a{
+        font: normal normal bold 16px Arial, Helvetica, sans-serif;
+        color: rgb(0, 0, 0);
+        text-decoration: none;
+    }
+    
+    
+    .articles #f1stArticle{
+        margin-top: 1em;
+        margin-bottom: 1em;
+    }
+    
+    .articles #f1stArticle img{
+        width: 60px;
+        height: 60px;
+        margin-left: 23px;
+    }
+    
+    .articles #f1stArticle h3{
+        display: inline;
+    }
+    
+    .articles #f1stArticle h3 a{
+        font: normal normal bold 16px Arial, Helvetica, sans-serif;
+        color: rgb(0, 0, 0);
+        display: inline;
+        text-decoration: none;
+    }
+    
+    
+    .articles hr{
+        border: auto solid rgb(128, 128, 128) ;
+    }
+    
+    
+    .articles #s2ndArticle{
+        margin-top: 1em;
+        margin-bottom: 1em;
+    }
+    
+    .articles #s2ndArticle img{
+        width: 60px;
+        height: 60px;
+        margin-left: 23px;
+    }
+    
+    .articles #s2ndArticle h3{
+        display: inline;
+    }
+    
+    .articles #s2ndArticle h3 a{
+        font: normal normal bold 16px Arial, Helvetica, sans-serif;
+        color: rgb(0, 0, 0);
+        display: inline;
+        text-decoration: none;
+    }
+    
+    
+    .popNews{
+        background-color: rgba(102, 120, 161, 0.3) ;
+        text-align: left;
+        color: rgb(0, 0, 0);
+        font: normal normal bold 20px Arial, Helvetica, sans-serif;
+    }
+    
+    .popNews h2{
+        text-align: center;
+        font: normal normal bold 20px Arial, Helvetica, sans-serif;
+    }
+    
+    
+    .popNews #f1stPop{
+        margin-top: 1em;
+        margin-bottom: 1em;
+    }
+    
+    .popNews #f1stPop img{
+        width: 30px;
+        height: 30px;
+        margin-left: 12px;
+    }
+    
+    .popNews #f1stPop h3{
+        display: inline;
+    }
+    
+    .popNews #f1stPop h3 a{
+        font: normal normal bold 16px Arial, Helvetica, sans-serif;
+        color: rgb(0, 0, 0);
+        display: inline;
+        text-decoration: none;
+    }
+    
+    .popNews hr{
+        border: auto solid rgb(128, 128, 128) ;
+    }
+    
+    .popNews #s2ndPop{
+        margin-top: 1em;
+        margin-bottom: 1em;
+    }
+    
+    .popNews #s2ndPop img{
+        width: 30px;
+        height: 30px;
+        margin-left: 12px;
+    }
+    
+    .popNews #s2ndPop h3{
+        display: inline;
+    }
+    
+    .popNews #s2ndPop h3 a{
+        font: normal normal bold 16px Arial, Helvetica, sans-serif;
+        color: rgb(0, 0, 0);
+        display: inline;
+        text-decoration: none;
+    }
+}
+
+
+
+
+
+/*ArtsPage.html--------*/
+.articlesArt{grid-area: articleArt;}
+
+
+/*Mobile & small tablets------------------------*/
+@media only screen and (max-width: 800px){
+    .grid-container-arts{
+        display: grid;
+        grid-template-columns: auto auto auto auto auto auto;
+        grid-template-areas: 
+            'header header header header header header'
+            'nav nav nav nav nav nav'
+            'articleArt articleArt articleArt articleArt articleArt articleArt'
+            'footer footer footer footer footer footer';
+        background-color: white;
+    }
+    
+
+    
+    .articlesArt{
+        background-color: rgba(102, 120, 161, 0.1) ;
+        text-align: center;
+        color: rgb(0, 0, 0);
+        font: normal normal bold 16px Arial, Helvetica, sans-serif;
+    }
+
+    
+    .articlesArt #mainArticleArt{
+        
+    }
+    
+    .articlesArt #mainArticleArt h3{
+        font: normal normal bold 16px "Times New Roman", Times, serif;
+    }
+    
+    .articlesArt #mainArticleArt video{
+        width: 300px;
+        height: 180px;
+    }
+    
+    .articlesArt #mainArticleArt p{
+        font: normal normal normal 12px Arial, Helvetica, sans-serif;
+    }
+    
+    
+    .articlesArt hr{
+        border: auto solid rgb(128, 128, 128) ;
+        width: 50%;
+    }
+    
+
+    
+    .articlesArt #f1stArticleArt{
+        margin-top: 1em;
+        margin-bottom: 1em;
+    }
+    
+    .articlesArt #f1stArticleArt summary{
+        list-style: none;
+    } 
+
+    .articlesArt #f1stArticleArt summary h3{
+        font: normal normal bold 16px "Times New Roman", Times, serif;
+    }   
+    
+    .articlesArt #f1stArticleArt img{
+        width: 280px;
+        height: 280px;
+    }
+    
+    .articlesArt #f1stArticleArt p{
+        font: normal normal normal 12px Arial, Helvetica, sans-serif;
+    }
+    
+    
+    .articlesArt #s2ndArticleArt{
+        margin-top: 1em;
+        margin-bottom: 1em;
+    }
+    
+    .articlesArt #s2ndArticleArt summary{
+        list-style: none;
+    }
+
+    .articlesArt #s2ndArticleArt summary h3{
+        font: normal normal bold 16px "Times New Roman", Times, serif;
+    }
+    
+    .articlesArt #s2ndArticleArt video{
+        width: 300px;
+        height: 180px;
+    }
+    
+    .articlesArt #s2ndArticleArt video source{
+        
+    }
+    
+    .articlesArt #s2ndArticleArt p{
+        font: normal normal normal 12px Arial, Helvetica, sans-serif;
+    }
+}
+
+
+/*Tablets------------------------*/
+@media only screen and (min-width: 801px) and (max-width: 1024px){
+    .grid-container-arts{
+        display: grid;
+        grid-template-columns: auto auto auto auto auto auto;
+        grid-template-areas: 
+            'header header header header header header'
+            'nav nav nav nav nav nav'
+            'articleArt articleArt articleArt articleArt articleArt articleArt'
+            'footer footer footer footer footer footer';
+        background-color: white;
+    }
+    
+
+    
+    .articlesArt{
+        background-color: rgba(102, 120, 161, 0.1) ;
+        text-align: center;
+        color: rgb(0, 0, 0);
+        font: normal normal bold 20px Arial, Helvetica, sans-serif;
+    }
+
+    
+    .articlesArt #mainArticleArt{
+        
+    }
+    
+    .articlesArt #mainArticleArt h3{
+        font: normal normal bold 20px "Times New Roman", Times, serif;
+    }
+    
+    .articlesArt #mainArticleArt video{
+        width: 580px;
+        height: 460px;
+    }
+    
+    .articlesArt #mainArticleArt p{
+        font: normal normal normal 14px Arial, Helvetica, sans-serif;
+    }
+    
+    
+    .articlesArt hr{
+        border: auto solid rgb(128, 128, 128) ;
+        width: 50%;
+    }
+    
+
+    
+    .articlesArt #f1stArticleArt{
+        margin-top: 1em;
+        margin-bottom: 1em;
+    }
+    
+    .articlesArt #f1stArticleArt summary{
+        list-style: none;
+    } 
+
+    .articlesArt #f1stArticleArt summary h3{
+        font: normal normal bold 20px "Times New Roman", Times, serif;
+    }   
+    
+    .articlesArt #f1stArticleArt img{
+        width: 380px;
+        height: 380px;
+    }
+    
+    .articlesArt #f1stArticleArt p{
+        font: normal normal normal 14px Arial, Helvetica, sans-serif;
+    }
+    
+    
+    .articlesArt #s2ndArticleArt{
+        margin-top: 1em;
+        margin-bottom: 1em;
+    }
+    
+    .articlesArt #s2ndArticleArt summary{
+        list-style: none;
+    }
+
+    .articlesArt #s2ndArticleArt summary h3{
+        font: normal normal bold 20px "Times New Roman", Times, serif;
+    }
+    
+    .articlesArt #s2ndArticleArt video{
+        width: 580px;
+        height: 460px;
+    }
+    
+    .articlesArt #s2ndArticleArt video source{
+        
+    }
+    
+    .articlesArt #s2ndArticleArt p{
+        font: normal normal normal 14px Arial, Helvetica, sans-serif;
+    }
+}
+
+
+/*Laptops & desktops------------------------*/
+@media only screen and (min-width: 1025px){
+    .grid-container-arts{
+        display: grid;
+        grid-template-columns: auto auto auto auto auto auto;
+        grid-template-areas: 
+            'header header header header header header'
+            'nav nav nav nav nav nav'
+            'articleArt articleArt articleArt articleArt articleArt articleArt'
+            'footer footer footer footer footer footer';
+        background-color: white;
+    }
+    
+
+    
+    .articlesArt{
+        background-color: rgba(102, 120, 161, 0.1) ;
+        text-align: center;
+        color: rgb(0, 0, 0);
+        font: normal normal bold 24px Arial, Helvetica, sans-serif;
+    }
+
+    
+    .articlesArt #mainArticleArt{
+        
+    }
+
+    
+    .articlesArt #mainArticleArt h3{
+        font: normal normal bold 24px "Times New Roman", Times, serif;
+    }
+    
+    .articlesArt #mainArticleArt video{
+        width: 680px;
+        height: 560px;
+    }
+    
+    .articlesArt #mainArticleArt p{
+        font: normal normal normal 16px Arial, Helvetica, sans-serif;
+    }
+    
+    
+    .articlesArt hr{
+        border: auto solid rgb(128, 128, 128) ;
+        width: 50%;
+    }
+    
+
+    
+    .articlesArt #f1stArticleArt{
+        margin-top: 1em;
+        margin-bottom: 1em;
+    }
+    
+    .articlesArt #f1stArticleArt summary{
+        list-style: none;
+    } 
+
+    .articlesArt #f1stArticleArt summary h3{
+        font: normal normal bold 24px "Times New Roman", Times, serif;
+    }   
+    
+    .articlesArt #f1stArticleArt img{
+        width: 480px;
+        height: 480px;
+    }
+    
+    .articlesArt #f1stArticleArt p{
+        font: normal normal normal 16px Arial, Helvetica, sans-serif;
+    }
+    
+    
+    .articlesArt #s2ndArticleArt{
+        margin-top: 1em;
+        margin-bottom: 1em;
+    }
+    
+    .articlesArt #s2ndArticleArt summary{
+        list-style: none;
+    }
+
+    .articlesArt #s2ndArticleArt summary h3{
+        font: normal normal bold 24px "Times New Roman", Times, serif;
+    }
+    
+    .articlesArt #s2ndArticleArt video{
+        width: 680px;
+        height: 560px;
+    }
+    
+    .articlesArt #s2ndArticleArt video source{
+        
+    }
+    
+    .articlesArt #s2ndArticleArt p{
+        font: normal normal normal 16px Arial, Helvetica, sans-serif;
+    }
+}
+
+
+
+
+
+/*TravelPage.html--------*/
+.articlesTravel{grid-area: articleTravel;}
+
+
+/*Mobiles & small tablets------------------------*/
+@media only screen and (max-width: 800px){
+    .grid-container-travel{
+        display: grid;
+        grid-template-columns: auto auto auto auto auto auto;
+        grid-template-areas: 
+            'header header header header header header'
+            'nav nav nav nav nav nav'
+            'articleTravel articleTravel articleTravel articleTravel articleTravel articleTravel'
+            'footer footer footer footer footer footer';
+        background-color: white;
+    }
+    
+    
+    
+    .articlesTravel{
+        background-color: rgba(102, 120, 161, 0.1) ;
+        text-align: center;
+        color: rgb(0, 0, 0);
+        font: normal normal bold 16px Arial, Helvetica, sans-serif;
+    }
+    
+    .articlesTravel #mainArticleTravel{
+        
+    }
+    
+    .articlesTravel #mainArticleTravel h3{
+        font: normal normal bold 16px "Times New Roman", Times, serif;
+    }
+    
+    .articlesTravel #mainArticleTravel img{
+        width: 190px;
+        height: 260px;
+    }
+    
+    .articlesTravel #mainArticleTravel p{
+        font: normal normal normal 12px Arial, Helvetica, sans-serif;
+    }
+    
+    
+    .articlesTravel hr{
+        border: auto solid rgb(128, 128, 128) ;
+        width: 50%;
+    }
+    
+    
+    .articlesTravel #f1stArticleTravel{
+        margin-top: 1em;
+        margin-bottom: 1em;
+    }
+    
+    .articlesTravel #f1stArticleTravel summary{
+        list-style: none;
+    } 
+
+    .articlesTravel #f1stArticleTravel summary h3{
+        font: normal normal bold 16px "Times New Roman", Times, serif;
+    }   
+    
+    .articlesTravel #f1stArticleTravel img{
+        width: 300px;
+        height: 180px;
+    }
+    
+    .articlesTravel #f1stArticleTravel p{
+        font: normal normal normal 12px Arial, Helvetica, sans-serif;
+    }
+    
+    
+    .articlesTravel #s2ndArticleTravel{
+        margin-top: 1em;
+        margin-bottom: 1em;
+    }
+    
+    .articlesTravel #s2ndArticleTravel summary{
+        list-style: none;
+    }
+
+    .articlesTravel #s2ndArticleTravel summary h3{
+        font: normal normal bold 16px "Times New Roman", Times, serif;
+    }
+    
+    .articlesTravel #s2ndArticleTravel video{
+        width: 300px;
+        height: 180px;
+    }
+    
+    .articlesTravel #s2ndArticleTravel video source{
+        
+    }
+    
+    .articlesTravel #s2ndArticleTravel p{
+        font: normal normal normal 12px Arial, Helvetica, sans-serif;
+    }
+}
+
+
+/*Tablets------------------------*/
+@media only screen and (min-width: 801px) and (max-width: 1024px){
+    .grid-container-travel{
+        display: grid;
+        grid-template-columns: auto auto auto auto auto auto;
+        grid-template-areas: 
+            'header header header header header header'
+            'nav nav nav nav nav nav'
+            'articleTravel articleTravel articleTravel articleTravel articleTravel articleTravel'
+            'footer footer footer footer footer footer';
+        background-color: white;
+    }
+    
+    
+    
+    .articlesTravel{
+        background-color: rgba(102, 120, 161, 0.1) ;
+        text-align: center;
+        color: rgb(0, 0, 0);
+        font: normal normal bold 20px Arial, Helvetica, sans-serif;
+    }
+    
+    .articlesTravel #mainArticleTravel{
+        
+    }
+    
+    .articlesTravel #mainArticleTravel h3{
+        font: normal normal bold 20px "Times New Roman", Times, serif;
+    }
+    
+    .articlesTravel #mainArticleTravel img{
+        width: 390px;
+        height: 520px;
+    }
+    
+    .articlesTravel #mainArticleTravel p{
+        font: normal normal normal 14px Arial, Helvetica, sans-serif;
+    }
+    
+    
+    .articlesTravel hr{
+        border: auto solid rgb(128, 128, 128) ;
+        width: 50%;
+    }
+    
+    
+    .articlesTravel #f1stArticleTravel{
+        margin-top: 1em;
+        margin-bottom: 1em;
+    }
+    
+    .articlesTravel #f1stArticleTravel summary{
+        list-style: none;
+    } 
+
+    .articlesTravel #f1stArticleTravel summary h3{
+        font: normal normal bold 20px "Times New Roman", Times, serif;
+    }  
+    
+    .articlesTravel #f1stArticleTravel img{
+        width: 580px;
+        height: 420px;
+    }
+    
+    .articlesTravel #f1stArticleTravel p{
+        font: normal normal normal 14px Arial, Helvetica, sans-serif;
+    }
+    
+    
+    .articlesTravel #s2ndArticleTravel{
+        margin-top: 1em;
+        margin-bottom: 1em;
+    }
+    
+    .articlesTravel #s2ndArticleTravel summary{
+        list-style: none;
+    }
+
+    .articlesTravel #s2ndArticleTravel summary h3{
+        font: normal normal bold 20px "Times New Roman", Times, serif;
+    }
+    
+    .articlesTravel #s2ndArticleTravel video{
+        width: 580px;
+        height: 460px;
+    }
+    
+    .articlesTravel #s2ndArticleTravel video source{
+        
+    }
+    
+    .articlesTravel #s2ndArticleTravel p{
+        font: normal normal normal 14px Arial, Helvetica, sans-serif;
+    }
+}
+
+
+/*Laptops & desktops------------------------*/
+@media only screen and (min-width: 1025px){
+    .grid-container-travel{
+        display: grid;
+        grid-template-columns: auto auto auto auto auto auto;
+        grid-template-areas: 
+            'header header header header header header'
+            'nav nav nav nav nav nav'
+            'articleTravel articleTravel articleTravel articleTravel articleTravel articleTravel'
+            'footer footer footer footer footer footer';
+        background-color: white;
+    }
+    
+    
+    
+    .articlesTravel{
+        background-color: rgba(102, 120, 161, 0.1) ;
+        text-align: center;
+        color: rgb(0, 0, 0);
+        font: normal normal bold 24px Arial, Helvetica, sans-serif;
+    }
+    
+    .articlesTravel #mainArticleTravel{
+        
+    }
+    
+    .articlesTravel #mainArticleTravel h3{
+        font: normal normal bold 24px "Times New Roman", Times, serif;
+    }
+    
+    .articlesTravel #mainArticleTravel img{
+        width: 480px;
+        height: 650px;
+    }
+    
+    .articlesTravel #mainArticleTravel p{
+        font: normal normal normal 16px Arial, Helvetica, sans-serif;
+    }
+    
+    
+    .articlesTravel hr{
+        border: auto solid rgb(128, 128, 128) ;
+        width: 50%;
+    }
+    
+    
+    .articlesTravel #f1stArticleTravel{
+        margin-top: 1em;
+        margin-bottom: 1em;
+    }
+    
+    .articlesTravel #f1stArticleTravel summary{
+        list-style: none;
+    } 
+
+    .articlesTravel #f1stArticleTravel summary h3{
+        font: normal normal bold 24px "Times New Roman", Times, serif;
+    }   
+    
+    .articlesTravel #f1stArticleTravel img{
+        width: 680px;
+        height: 520px;
+    }
+    
+    .articlesTravel #f1stArticleTravel p{
+        font: normal normal normal 16px Arial, Helvetica, sans-serif;
+    }
+    
+    
+    .articlesTravel #s2ndArticleTravel{
+        margin-top: 1em;
+        margin-bottom: 1em;
+    }
+    
+    .articlesTravel #s2ndArticleTravel summary{
+        list-style: none;
+    }
+
+    .articlesTravel #s2ndArticleTravel summary h3{
+        font: normal normal bold 24px "Times New Roman", Times, serif;
+    }
+    
+    .articlesTravel #s2ndArticleTravel video{
+        width: 680px;
+        height: 560px;
+    }
+    
+    .articlesTravel #s2ndArticleTravel video source{
+        
+    }
+    
+    .articlesTravel #s2ndArticleTravel p{
+        font: normal normal normal 16px Arial, Helvetica, sans-serif;
+    }
+}
+
+
+
+
+
+/*FoodPage.html--------*/
+.articlesFood{grid-area: articleFood;}
+
+
+/*Mobiles & small tablets------------------------*/
+@media only screen and (max-width: 800px){
+    .grid-container-food{
+        display: grid;
+        grid-template-columns: auto auto auto auto auto auto;
+        grid-template-areas: 
+            'header header header header header header'
+            'nav nav nav nav nav nav'
+            'articleFood articleFood articleFood articleFood articleFood articleFood'
+            'footer footer footer footer footer footer';
+        background-color: white;
+    }
+    
+    
+    
+    .articlesFood{
+        background-color: rgba(102, 120, 161, 0.1) ;
+        text-align: center;
+        color: rgb(0, 0, 0);
+        font: normal normal bold 16px Arial, Helvetica, sans-serif;
+    }
+    
+    .articlesFood #mainArticleFood{
+        
+    }
+    
+    .articlesFood #f1stArticleFood summary{
+        list-style: none;
+    }  
+
+    .articlesFood #f1stArticleFood summary h3{
+        font: normal normal bold 16px "Times New Roman", Times, serif;
+    } 
+    
+    .articlesFood #mainArticleFood img{
+        width: 300px;
+        height: 180px;
+    }
+    
+    .articlesFood #mainArticleFood p{
+        font: normal normal normal 12px Arial, Helvetica, sans-serif;
+    }
+    
+    
+    .articlesFood hr{
+        border: auto solid rgb(128, 128, 128) ;
+        width: 50%;
+    }
+    
+    
+    .articlesFood #f1stArticleFood{
+        margin-top: 1em;
+        margin-bottom: 1em;
+    }
+    
+    .articlesFood #f1stArticleFood h3{
+        font: normal normal bold 16px "Times New Roman", Times, serif;
+    }   
+    
+    .articlesFood #f1stArticleFood img{
+        width: 280px;
+        height: 280px;
+    }
+    
+    .articlesFood #f1stArticleFood p{
+        font: normal normal normal 12px Arial, Helvetica, sans-serif;
+    }
+    
+    
+    .articlesFood #s2ndArticleFood{
+        margin-top: 1em;
+        margin-bottom: 1em;
+    }
+    
+    .articlesFood #s2ndArticleFood summary{
+        list-style: none;
+    }
+
+    .articlesFood #s2ndArticleFood summary h3{
+        font: normal normal bold 16px "Times New Roman", Times, serif;
+    }
+    
+    .articlesFood #s2ndArticleFood img{
+        width: 300px;
+        height: 180px;
+    }
+    
+    .articlesFood #s2ndArticleFood p{
+        font: normal normal normal 12px Arial, Helvetica, sans-serif;
+    }
+}
+
+
+/*Tablets------------------------*/
+@media only screen and (min-width: 801px) and (max-width: 1024px){
+    .grid-container-food{
+        display: grid;
+        grid-template-columns: auto auto auto auto auto auto;
+        grid-template-areas: 
+            'header header header header header header'
+            'nav nav nav nav nav nav'
+            'articleFood articleFood articleFood articleFood articleFood articleFood'
+            'footer footer footer footer footer footer';
+        background-color: white;
+    }
+    
+    
+    
+    .articlesFood{
+        background-color: rgba(102, 120, 161, 0.1) ;
+        text-align: center;
+        color: rgb(0, 0, 0);
+        font: normal normal bold 20px Arial, Helvetica, sans-serif;
+    }
+    
+    .articlesFood #mainArticleFood{
+        
+    }
+    
+    .articlesFood #mainArticleFood h3{
+        font: normal normal bold 20px "Times New Roman", Times, serif;
+    }
+    
+    .articlesFood #mainArticleFood img{
+        width: 580px;
+        height: 380px;
+    }
+    
+    .articlesFood #mainArticleFood p{
+        font: normal normal normal 14px Arial, Helvetica, sans-serif;
+    }
+    
+    
+    .articlesFood hr{
+        border: auto solid rgb(128, 128, 128) ;
+        width: 50%;
+    }
+    
+    
+    .articlesFood #f1stArticleFood{
+        margin-top: 1em;
+        margin-bottom: 1em;
+    }
+    
+    .articlesFood #f1stArticleFood summary{
+        list-style: none;
+    }  
+
+    .articlesFood #f1stArticleFood summary h3{
+        font: normal normal bold 20px "Times New Roman", Times, serif;
+    }   
+    
+    .articlesFood #f1stArticleFood img{
+        width: 380px;
+        height: 380px;
+    }
+    
+    .articlesFood #f1stArticleFood p{
+        font: normal normal normal 14px Arial, Helvetica, sans-serif;
+    }
+    
+    
+    .articlesFood #s2ndArticleFood{
+        margin-top: 1em;
+        margin-bottom: 1em;
+    }
+    
+    .articlesFood #s2ndArticleFood summary{
+        list-style: none;
+    }
+
+    .articlesFood #s2ndArticleFood summary h3{
+        font: normal normal bold 20px "Times New Roman", Times, serif;
+    }
+    
+    .articlesFood #s2ndArticleFood img{
+        width: 580px;
+        height: 460px;
+    }
+    
+    .articlesFood #s2ndArticleFood p{
+        font: normal normal normal 14px Arial, Helvetica, sans-serif;
+    }
+}
+
+
+/*Laptops & desktops------------------------*/
+@media only screen and (min-width: 1025px){
+    .grid-container-food{
+        display: grid;
+        grid-template-columns: auto auto auto auto auto auto;
+        grid-template-areas: 
+            'header header header header header header'
+            'nav nav nav nav nav nav'
+            'articleFood articleFood articleFood articleFood articleFood articleFood'
+            'footer footer footer footer footer footer';
+        background-color: white;
+    }
+    
+    
+    
+    .articlesFood{
+        background-color: rgba(102, 120, 161, 0.1) ;
+        text-align: center;
+        color: rgb(0, 0, 0);
+        font: normal normal bold 24px Arial, Helvetica, sans-serif;
+    }
+    
+    .articlesFood #mainArticleFood{
+        
+    }
+    
+    .articlesFood #mainArticleFood h3{
+        font: normal normal bold 24px "Times New Roman", Times, serif;
+    }
+    
+    .articlesFood #mainArticleFood img{
+        width: 680px;
+        height: 480px;
+    }
+    
+    .articlesFood #mainArticleFood p{
+        font: normal normal normal 16px Arial, Helvetica, sans-serif;
+    }
+    
+    
+    .articlesFood hr{
+        border: auto solid rgb(128, 128, 128) ;
+        width: 50%;
+    }
+    
+    
+    .articlesFood #f1stArticleFood{
+        margin-top: 1em;
+        margin-bottom: 1em;
+    }
+    
+    .articlesFood #f1stArticleFood summary{
+        list-style: none;
+    }  
+
+    .articlesFood #f1stArticleFood summary h3{
+        font: normal normal bold 24px "Times New Roman", Times, serif;
+    }   
+    
+    .articlesFood #f1stArticleFood img{
+        width: 480px;
+        height: 480px;
+    }
+    
+    .articlesFood #f1stArticleFood p{
+        font: normal normal normal 16px Arial, Helvetica, sans-serif;
+    }
+    
+    
+    .articlesFood #s2ndArticleFood{
+        margin-top: 1em;
+        margin-bottom: 1em;
+    }
+    
+    .articlesFood #s2ndArticleFood summary{
+        list-style: none;
+    }
+
+    .articlesFood #s2ndArticleFood summary h3{
+        font: normal normal bold 24px "Times New Roman", Times, serif;
+    }
+    
+    .articlesFood #s2ndArticleFood img{
+        width: 680px;
+        height: 560px;
+    }
+    
+    .articlesFood #s2ndArticleFood p{
+        font: normal normal normal 16px Arial, Helvetica, sans-serif;
+    }
+}
+
+
+
+
+/*Footer--------*/
+footer{grid-area: footer;}
+
+
+/*Mobiles & small tablets------------------------*/
+@media only screen and (max-width: 800px){
+    footer{
+        background-color: rgb(19, 44, 104) ;
+        text-align: left;
+        color: white;
+        font: normal normal bold 12px Arial, Helvetica, sans-serif;
+    }
+    
+    footer .info{
+    
+    }
+    
+
+    footer .info #contactUs{
+        width: max-content;
+        margin-top: 1em;
+        margin-left: 1em;
+        padding: 0.4em 1em 1em 1em;
+        background-color: rgb(41, 63, 114);
+        color: rgb(255, 255, 255);
+    }
+    
+    footer .info #contactUs h2{
+        color: rgb(255, 255, 255);
+        font: normal normal bold 12px Arial, Helvetica, sans-serif;
+    }
+    
+    footer .info #contactUs #addCont{
+        
+    }
+    
+    footer .info #contactUs #addCont h3{
+        color: rgb(255, 255, 255);
+        font: normal normal bold 10px Arial, Helvetica, sans-serif;
+    }
+    
+    footer .info #contactUs #addCont address{
+        font: normal normal normal 10px Arial, Helvetica, sans-serif;
+    }
+    
+    footer .info #contactUs #infoCont{
+        
+    }
+    
+    footer .info #contactUs #infoCont h3{
+        color: rgb(255, 255, 255);
+        font: normal normal bold 10px Arial, Helvetica, sans-serif;
+    }
+    
+    footer .info #contactUs #infoCont address{
+        font: normal normal normal 10px Arial, Helvetica, sans-serif;
+    }
+    
+    
+    
+    footer .info #coRight{
+        text-align: center;
+    }
+    
+    footer .info #coRight p{
+        color: rgb(255, 255, 255);
+        font: normal normal bold 12px Arial, Helvetica, sans-serif;
+    }
+    
+    footer .info #coRight img{
+        width: 32px;
+        height: 32px;
+    }
+}
+
+
+/*Tablets------------------------*/
+@media only screen and (min-width: 801px) and (max-width: 1024px){
+    footer{
+        background-color: rgb(19, 44, 104) ;
+        text-align: left;
+        color: white;
+        font: normal normal bold 14px Arial, Helvetica, sans-serif;
+    }
+    
+    footer .info{
+    
+    }
+    
+
+    footer .info #contactUs{
+        width: max-content;
+        margin-top: 1.5em;
+        margin-left: 1.5em;
+        padding: 0.7em 1.5em 1.5em 1.5em;
+        background-color: rgb(41, 63, 114);
+        color: rgb(255, 255, 255);
+    }
+    
+    footer .info #contactUs h2{
+        color: rgb(255, 255, 255);
+        font: normal normal bold 14px Arial, Helvetica, sans-serif;
+    }
+    
+    footer .info #contactUs #addCont{
+        
+    }
+    
+    footer .info #contactUs #addCont h3{
+        color: rgb(255, 255, 255);
+        font: normal normal bold 12px Arial, Helvetica, sans-serif;
+    }
+    
+    footer .info #contactUs #addCont address{
+        font: normal normal normal 12px Arial, Helvetica, sans-serif;
+    }
+    
+    footer .info #contactUs #infoCont{
+        
+    }
+    
+    footer .info #contactUs #infoCont h3{
+        color: rgb(255, 255, 255);
+        font: normal normal bold 12px Arial, Helvetica, sans-serif;
+    }
+    
+    footer .info #contactUs #infoCont address{
+        font: normal normal normal 12px Arial, Helvetica, sans-serif;
+    }
+    
+    
+    
+    footer .info #coRight{
+        text-align: center;
+    }
+    
+    footer .info #coRight p{
+        color: rgb(255, 255, 255);
+        font: normal normal bold 14px Arial, Helvetica, sans-serif;
+    }
+    
+    footer .info #coRight img{
+        width: 36px;
+        height: 36px;
+    }
+}
+
+
+/*Laptops & desktops------------------------*/
+@media only screen and (min-width: 1025px){
+    footer{
+        background-color: rgb(19, 44, 104) ;
+        text-align: left;
+        color: white;
+        font: normal normal bold 16px Arial, Helvetica, sans-serif;
+    }
+    
+    footer .info{
+    
+    }
+    
+
+    footer .info #contactUs{
+        width: max-content;
+        margin-top: 2em;
+        margin-left: 2em;
+        padding: 1em 2em 2em 2em;
+        background-color: rgb(41, 63, 114);
+        color: rgb(255, 255, 255);
+    }
+    
+    footer .info #contactUs h2{
+        color: rgb(255, 255, 255);
+        font: normal normal bold 16px Arial, Helvetica, sans-serif;
+    }
+    
+    footer .info #contactUs #addCont{
+        
+    }
+    
+    footer .info #contactUs #addCont h3{
+        color: rgb(255, 255, 255);
+        font: normal normal bold 14px Arial, Helvetica, sans-serif;
+    }
+    
+    footer .info #contactUs #addCont address{
+        font: normal normal normal 14px Arial, Helvetica, sans-serif;
+    }
+    
+    footer .info #contactUs #infoCont{
+        
+    }
+    
+    footer .info #contactUs #infoCont h3{
+        color: rgb(255, 255, 255);
+        font: normal normal bold 14px Arial, Helvetica, sans-serif;
+    }
+    
+    footer .info #contactUs #infoCont address{
+        font: normal normal normal 14px Arial, Helvetica, sans-serif;
+    }
+    
+    
+    
+    footer .info #coRight{
+        text-align: center;
+    }
+    
+    footer .info #coRight p{
+        color: rgb(255, 255, 255);
+        font: normal normal bold 16px Arial, Helvetica, sans-serif;
+    }
+    
+    footer .info #coRight img{
+        width: 40px;
+        height: 40px;
+    }
+}
+
+
+
+
+

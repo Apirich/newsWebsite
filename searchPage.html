@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">  
+<head>
+    <!--Meta data-->
+    <meta charset="UTF8">
+    <meta name="description" content="Api News web site">
+    <meta name="keyword" content="News, Megazines">
+    <meta name="author" content="AT Api">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="refresh" content="30">
+    <meta name="robot" content="noindex, nofollow">
+    <link rel="stylesheet" type="text/css" href="styleSheet/style.css">
+</head>
+
+<body>
+<div class="grid-container-main">
+    <header>
+        <!--Logo-->
+        <img id="logo" src="image/apiLogo.png" alt="Api News Logo" width="120" height="120">
+
+        <!--Subcribe & login, logout-->
+        <div class="loginout"> 
+            <!--Subscribe button-->
+            <button id="subscribeBut" type="button" title="Please log in to subscribe." disabled>Subscribe</button>
+
+            <!--Log in button-->
+            <button id="disLoginBut" class="loginBut" type="button">Log in</button>
+            <!--Log in form-->
+            <form id="loginForm">
+                <label for="username">Username<br></label>
+                <input type="text" id="username" name="username" placeholder="Enter Username" required><br>
+
+                <label for="password">Password<br></label>
+                <input type="text" id="password" name="password" placeholder="Enter Password" required><br>
+
+                <button id="subLoginBut" class="loginBut" type="button">Log in</button>
+
+                <button id="cloBut" class="loginBut" type="button">&#9747;</button>
+            </form>
+            <!--Log out-->
+            <button id="logoutBut">Log out</button>
+        </div>
+
+      
+
+        <!--Search icon & input-->
+        <form id="searchForm" action="searchPage.html" method="get">
+            <img src="image/searchIcon.png" alt="Search icon" width="20" height="20">
+            <input type="text" id="search" name="search" placeholder="Search">
+        </form>
+    </header>
+
+    <!--Navigation bar-->
+    <nav>
+        <ol id="colMenu" class="norNav">
+            <span id="menuSym">&#9776;</span>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="artsPage.html">Arts</a></li>
+            <li><a href="travelPage.html">Travel</a></li>
+            <li><a href="foodPage.html">Food</a></li>
+        </ol>
+    </nav>
+
+    <!--Trending videos-->
+    <div class="trendingVideos">
+        <h2>Trending Videos</h2>
+
+        <!--1st trending-->
+        <div id="f1stTrending">
+            <video id="f1video" width="230" height="180" controls>
+                <source id="vidSou" src="video/hawaii.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+
+            <div id="f1stOvl">
+                <p>Honolulu Island</p>
+            </div>
+        </div>
+
+        <hr>
+        
+        <!--2nd trending-->
+        <div id="s2ndTrending">
+            <video id="s2video" width="230" height="180" controls>
+                <source src="video/clay.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            
+            <div id="s2ndOvl">
+                <p>Clay spinning</p>
+            </div>
+        </div>
+    </div>
+
+    <!--Articles-->
+    <div class="searchResult">
+        <p id="searchRel"></p>
+    </div>
+
+    <!--Popular News-->
+    <div class="popNews">
+        <h2>Popular News</h2>
+
+        <!--1st pop-->
+        <div id="f1stPop">
+            <img src="image/nft.jpg" alt="NFT photo" width="60" height="60">
+            <h3><a href="artsPage.html#f1stArticleArt">NFTs Art</a></h3>
+        </div>
+
+        <hr>
+
+        <!--2nd pop-->
+        <div id="s2ndPop">
+            <img src="image/bkRice.jpg" alt="Broken rice photo" width="60" height="60">
+            <h3><a href="foodPage.html#f1stArticleFood">Saigon Broken Rice</a></h3>
+        </div>
+    </div>
+
+    <footer>
+        <div class="info">
+            <!--Contact us-->
+            <div id="contactUs">
+                <h2>Contact Us</h2>
+
+                <!--Address-->
+                <div id="addCont">
+                    <h3>Address</h3>
+                    <address>12345 Api Blvd, News City, News State, 99999.</address>
+                </div>
+             
+                <!--Contact info-->
+                <div id="infoCont">
+                    <h3>Contact Info</h3>
+                    <address>
+                        Office: Unit 101<br>
+                        Email: park@theme.com<br>
+                        Phone: (888)-888-8888<br>
+                        Fax: (888)-888-8880
+                    </address>
+                </div>
+            </div>
+    
+            <!--Copyright & Logo-->
+            <div id="coRight">
+                <p>Copyright 2022 by Api News. All Rights Reserved.</p>
+                <img id="logo" src="image/apiLogo.png" alt="Api News Logo" width="40" height="40">
+            </div>
+        </div>
+    </footer>
+</div>
+    <script src="scripts/mainscript.js"></script>
+</body>
+</html>
